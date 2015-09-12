@@ -41,4 +41,6 @@ select convert( decimal(10,4), (power( ((power( (abs(min(lat_n)) - abs(min(long_
                                       + (power( (abs(max(lat_n)) - abs(max(long_w))) ,2) ) ), 0.5 ) )) from station;  
  
 /*12) question Observation Station 20 */  
-/*I do not know it yet*/
+select convert( decimal(6,4),round(x.lat_n,4)) from station x, station y
+group by x.lat_n
+having SUM(SIGN(1-SIGN(y.lat_n-x.lat_n))) = (COUNT(*)+1)/2;
