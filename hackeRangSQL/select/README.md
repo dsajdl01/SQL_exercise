@@ -19,8 +19,18 @@ Given a City table, whose fields are described as
 
 4) Japanese Cities' Name You have to print the name of all the cities of Japan.  
    The CountryCode for Japan is "JPN".   
-
-
+  
+16) Revising the Select Query - 1.  
+ 	Write a query that will fetch all columns for every row in the table where the  
+ 	CountryCode = 'USA' (i.e, we wish to retreive data for all American cities)  
+ 	and the population exceeds 100,000. 
+  
+17) Revising the Select Query - 2  
+ 	Write a query that will fetch all the city Names for every row in the table  
+ 	where the CountryCode = 'USA' (i.e, we wish to retreive data for all American cities)  
+ 	and the population exceeds 120000. 
+ 
+ 
 Given a table STATION that holds data for five fields    
 namely ID, CITY, STATE, NORTHERN LATITUDE and WESTERN LONGITUDE    
  
@@ -74,3 +84,4 @@ namely ID, CITY, STATE, NORTHERN LATITUDE and WESTERN LONGITUDE
 15) Weather Observation Station 12. Write a query to print the list of CITY that  
     does not start with vowels and does not end with vowels in lexicographical order.  
     Do not print duplicates.  
+
