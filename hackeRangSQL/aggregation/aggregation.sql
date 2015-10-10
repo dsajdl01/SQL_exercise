@@ -41,6 +41,18 @@ select convert( decimal(10,4), (power( ((power( (abs(min(lat_n)) - abs(min(long_
                                       + (power( (abs(max(lat_n)) - abs(max(long_w))) ,2) ) ), 0.5 ) )) from station;  
  
 /*12) question Observation Station 20 */  
-select convert( decimal(6,4),round(x.lat_n,4)) from station x, station y
-group by x.lat_n
-having SUM(SIGN(1-SIGN(y.lat_n-x.lat_n))) = (COUNT(*)+1)/2;
+select convert( decimal(6,4),round(x.lat_n,4)) from station x, station y 
+group by x.lat_n 
+having SUM(SIGN(1-SIGN(y.lat_n-x.lat_n))) = (COUNT(*)+1)/2; 
+ 
+/* 13) Revising Aggregations - The Sum function */ 
+SELECT sum(population) FROM city 
+WHERE district = 'California'; 
+ 
+/* 14) Revising Aggregations - Averages */ 
+SELECT AVG(population) FROM city 
+where district = 'California'; 
+  
+/* 15) Revising Aggregations - The Count Function  */ 
+SELECT count(name) FROM city 
+where population > 100000; 
