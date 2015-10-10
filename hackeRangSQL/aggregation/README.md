@@ -19,6 +19,19 @@ Given a City table, whose fields are described as
 
 3) Population Density Difference. Print the difference between     
    the maximum and minimum city populations.  
+  
+13) Revising Aggregations - The Sum function  
+    Write a query that will return the total population of  
+    the cities for which the District equals California.   
+
+14) Revising Aggregations - Averages 
+    Write a query that will return the average population of 
+    the cities for which the District equals California.
+
+15) Revising Aggregations - The Count Function 
+    Write a query that will return the number of cities for  
+    which the population exceeds 100000.  
+ 
 
 Given a table STATION that holds data for five fields namely ID, CITY,   
 STATE, NORTHERN LATITUDE and WESTERN LONGITUDE.  
