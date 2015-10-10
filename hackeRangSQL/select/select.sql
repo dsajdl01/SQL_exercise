@@ -74,3 +74,11 @@ ORDER BY CITY ASC;
 SELECT DISTINCT CITY FROM STATION  
 WHERE NOT REGEXP_LIKE(CITY, '^[AaEeIiOoUu]') AND NOT REGEXP_LIKE(CITY, '[aeiou]$')  
 ORDER BY CITY ASC; 
+
+/* 16) Revising the Select Query - 1*/
+SELECT id, name, countrycode, district, population FROM city
+where countrycode = 'USA' and population >100000;
+
+/* 17) Revising the Select Query - 2 */
+SELECT name FROM city
+WHERE countrycode = 'USA' and population > 120000;
